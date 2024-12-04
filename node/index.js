@@ -15,9 +15,9 @@ connection.query(sql)
 connection.end()
 
 
-app.get('/', (req,res) => {
-    res.send('<h1>Full Cycle Rocks!</h1>')
-})
+app.get('/', (req, res) => {
+    res.send('<h1>Full Cycle Rocks!</h1><p>Nome inserido, Nariana!</p>');
+});
 
 app.listen(port, ()=> {
     console.log('Rodando na porta ' + port)
